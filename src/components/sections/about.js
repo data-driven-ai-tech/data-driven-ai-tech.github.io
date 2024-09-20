@@ -128,6 +128,7 @@ const About = () => {
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
       <h2 className="numbered-heading">About datadriven.ai</h2>
+      <h2 className="numbered-heading">About datadriven.ai</h2>
       <div className="inner">
         <StyledText>
           <div>

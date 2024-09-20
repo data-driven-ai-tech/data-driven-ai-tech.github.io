@@ -59,33 +59,28 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Brittany Chiang.</h2>;
-  const three = <h3 className="big-heading">I build things for the web.</h3>;
+  const three_part_1 = <h3 className="big-heading">Dive into the data.</h3>;
+  const three_part_2 = <h3 className="big-heading">Drive impact.</h3>;
   const four = (
     <>
       <p>
-        I’m a software engineer specializing in building (and occasionally designing) exceptional
-        digital experiences. Currently, I’m focused on building accessible, human-centered products
-        at{' '}
-        <a href="https://upstatement.com/" target="_blank" rel="noreferrer">
-          Upstatement
-        </a>
-        .
+        datadriven.ai empowers businesses to unlock the full potential of their data. We go beyond
+        the numbers, uncovering hidden insights and translating them into actionable strategies that
+        deliver real-world impact.
       </p>
     </>
   );
   const five = (
     <a
       className="email-link"
-      href="https://www.newline.co/courses/build-a-spotify-connected-app"
+      href="https://www.instagram.com/datadriven.ai/"
       target="_blank"
       rel="noreferrer">
-      Check out my course!
+      Check out our Instagram profile!
     </a>
   );
 
-  const items = [one, two, three, four, five];
+  const items = [three_part_1, three_part_2, four, five];
 
   return (
     <StyledHeroSection>
