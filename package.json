@@ -1,6 +1,6 @@
 {
-  "name": "v4",
-  "description": "Personal Website V4",
+  "name": "datadriven.ai",
+  "description": "datadriven.ai",
   "version": "1.0.0",
   "author": "datadriven.ai <datadriven.ai@outlook.com>",
   "repository": {
@@ -15,6 +15,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
@@ -72,6 +73,7 @@
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.23.2",
     "gatsby-remark-code-titles": "^1.1.0",
+    "gh-pages": "^6.1.1",
     "husky": "^6.0.0",
     "lint-staged": "^10.1.2",
     "prettier": "^2.2.1"
