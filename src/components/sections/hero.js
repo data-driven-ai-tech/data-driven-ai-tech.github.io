@@ -73,10 +73,10 @@ const Hero = () => {
   const five = (
     <a
       className="email-link"
-      href="https://www.instagram.com/datadriven.ai/"
+      href="https://www.youtube.com/@data-driven-ai-channel"
       target="_blank"
       rel="noreferrer">
-      Check out our Instagram profile!
+      Check out our YouTube channel!
     </a>
   );
 
