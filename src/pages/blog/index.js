@@ -142,7 +142,7 @@ const StyledPost = styled.li`
   }
 `;
 
-const ProjectPage = ({ location, data }) => {
+const BlogPage = ({ location, data }) => {
   const posts = data.allMarkdownRemark.edges;
 
   return (
@@ -180,7 +180,7 @@ const ProjectPage = ({ location, data }) => {
                       <ul className="post__tags">
                         {tags.map((tag, i) => (
                           <li key={i}>
-                            <Link to={`/projects/tags/${kebabCase(tag)}/`} className="inline-link">
+                            <Link to={`/blog/tags/${kebabCase(tag)}/`} className="inline-link">
                               #{tag}
                             </Link>
                           </li>
@@ -197,12 +197,12 @@ const ProjectPage = ({ location, data }) => {
   );
 };
 
-ProjectPage.propTypes = {
+BlogPage.propTypes = {
   location: PropTypes.object.isRequired,
   data: PropTypes.object.isRequired,
 };
 
-export default ProjectPage;
+export default BlogPage;
 
 export const pageQuery = graphql`
   {

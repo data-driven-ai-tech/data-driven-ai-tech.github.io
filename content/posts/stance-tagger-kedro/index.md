@@ -3,7 +3,7 @@ title: A tool for opinion extraction from texts
 description: We created a web application to extract opinions from text using natural language processing techniques.
 date: 2020-06-30
 draft: false
-slug: /projects/stance-tagger-kedro
+slug: /blog/stance-tagger-kedro
 tags:
   - nlp
 ---

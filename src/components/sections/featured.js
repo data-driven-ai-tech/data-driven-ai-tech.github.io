@@ -323,7 +323,7 @@ const Featured = () => {
               github
               external
               youtube
-              projects
+              blog
             }
             html
           }

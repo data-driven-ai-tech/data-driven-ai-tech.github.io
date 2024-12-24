@@ -126,7 +126,7 @@ const Story = () => {
   }, []);
 
   return (
-    <StyledStorySection id="Story" ref={revealContainer}>
+    <StyledStorySection id="story" ref={revealContainer}>
       <h2 className="numbered-heading">Story</h2>
       <div className="inner">
         <StyledText>

@@ -3,7 +3,7 @@ title: Recommender system for YELP users
 description: We built a web application to recommend businesses to YELP users, leveraging various algorithms for user selection.
 date: 2019-02-06
 draft: false
-slug: /projects/recommender-system-for-yelp-users
+slug: /blog/recommender-system-for-yelp-users
 tags:
   - recommender-systems
 ---

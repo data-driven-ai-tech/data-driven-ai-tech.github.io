@@ -43,7 +43,7 @@ const StyledProjectsSection = styled.section`
   }
 `;
 
-const StyledProject = styled.li`
+const StyledBlog = styled.li`
   position: relative;
   cursor: default;
   transition: var(--transition);
@@ -165,12 +165,12 @@ const StyledProject = styled.li`
   }
 `;
 
-const Projects = () => {
+const Blog = () => {
   const data = useStaticQuery(graphql`
     query {
       projects: allMarkdownRemark(
         filter: {
-          fileAbsolutePath: { regex: "/content/projects/" }
+          fileAbsolutePath: { regex: "/content/blog/" }
           frontmatter: { showInProjects: { ne: false } }
         }
         sort: { fields: [frontmatter___date], order: DESC }
@@ -276,7 +276,7 @@ const Projects = () => {
           <>
             {projectsToShow &&
               projectsToShow.map(({ node }, i) => (
-                <StyledProject key={i}>{projectInner(node)}</StyledProject>
+                <StyledBlog key={i}>{projectInner(node)}</StyledBlog>
               ))}
           </>
         ) : (
@@ -288,14 +288,14 @@ const Projects = () => {
                   classNames="fadeup"
                   timeout={i >= GRID_LIMIT ? (i - GRID_LIMIT) * 300 : 300}
                   exit={false}>
-                  <StyledProject
+                  <StyledBlog
                     key={i}
                     ref={el => (revealProjects.current[i] = el)}
                     style={{
                       transitionDelay: `${i >= GRID_LIMIT ? (i - GRID_LIMIT) * 100 : 0}ms`,
                     }}>
                     {projectInner(node)}
-                  </StyledProject>
+                  </StyledBlog>
                 </CSSTransition>
               ))}
           </TransitionGroup>
@@ -309,4 +309,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Blog;
