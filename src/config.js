@@ -22,6 +22,18 @@ module.exports = {
       url: '/#tech-stack',
     },
     {
+      name: 'Story',
+      url: '/#story',
+    },
+    {
+      name: 'Projects',
+      url: '/#projects',
+    },
+    {
+      name: 'Blog',
+      url: '/blog',
+    },
+    {
       name: 'Contact',
       url: '/#contact',
     },

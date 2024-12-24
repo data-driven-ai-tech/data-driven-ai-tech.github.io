@@ -170,16 +170,8 @@ const ArchivePage = ({ location, data }) => {
             <tbody>
               {projects.length > 0 &&
                 projects.map(({ node }, i) => {
-                  const {
-                    date,
-                    github,
-                    external,
-                    ios,
-                    android,
-                    title,
-                    tech,
-                    company,
-                  } = node.frontmatter;
+                  const { date, github, external, title, tech, company, youtube, rpubs } =
+                    node.frontmatter;
                   return (
                     <tr key={i} ref={el => (revealProjects.current[i] = el)}>
                       <td className="overline year">{`${new Date(date).getFullYear()}`}</td>
@@ -213,14 +205,14 @@ const ArchivePage = ({ location, data }) => {
                               <Icon name="GitHub" />
                             </a>
                           )}
-                          {ios && (
-                            <a href={ios} aria-label="Apple App Store Link">
-                              <Icon name="AppStore" />
+                          {youtube && (
+                            <a href={youtube} aria-label="YouTube Link">
+                              <Icon name="YouTube" />
                             </a>
                           )}
-                          {android && (
-                            <a href={android} aria-label="Google Play Store Link">
-                              <Icon name="PlayStore" />
+                          {rpubs && (
+                            <a href={rpubs} aria-label="RPubs Link">
+                              <Icon name="RPubs" />
                             </a>
                           )}
                         </div>
@@ -256,9 +248,9 @@ export const pageQuery = graphql`
             tech
             github
             external
-            ios
-            android
             company
+            youtube
+            rpubs
           }
           html
         }
