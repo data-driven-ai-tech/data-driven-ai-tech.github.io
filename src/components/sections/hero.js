@@ -59,7 +59,7 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  const one = <h1>Hi, this is </h1>;
+  const one = <h1>This is </h1>;
   const two = <h2 className="big-heading">datadriven.ai</h2>;
   const three = <h3 className="big-heading">Dive into the data.</h3>;
   const four = <h3 className="big-heading">Drive impact.</h3>;

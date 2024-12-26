@@ -12,6 +12,25 @@ module.exports = {
     },
   ],
 
+  StorySocialMedia: [
+    {
+      name: 'GitHub',
+      url: 'https://github.com/matbarPL',
+    },
+    {
+      name: 'Twitter',
+      url: 'https://x.com/matbarPL',
+    },
+    {
+      name: 'RPubs',
+      url: 'https://rpubs.com/matbarPL',
+    },
+    {
+      name: 'Linkedin',
+      url: 'https://www.linkedin.com/in/mateusz-baryla/',
+    },
+  ],
+
   navLinks: [
     {
       name: 'About',

@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { srConfig } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
+import { StoryFooter } from '../index';
 
 const StyledStorySection = styled.section`
   max-width: 900px;
@@ -177,6 +178,7 @@ const Story = () => {
               alt="me"
             />
           </div>
+          <StoryFooter />
         </StyledPic>
       </div>
     </StyledStorySection>
