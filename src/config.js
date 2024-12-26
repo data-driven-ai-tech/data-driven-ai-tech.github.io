@@ -10,6 +10,10 @@ module.exports = {
       name: 'Instagram',
       url: 'https://www.instagram.com/datadriven.ai/',
     },
+    {
+      name: 'YouTube',
+      url: 'https://www.youtube.com/@data-driven-ai-channel',
+    },
   ],
 
   StorySocialMedia: [
