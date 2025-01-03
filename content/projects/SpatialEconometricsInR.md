@@ -4,8 +4,8 @@ title: 'Spatial econometrics for analyzing geospatial data'
 rpubs: 'https://rpubs.com/matbarPL/spatial-econometrics'
 tech:
   - R
-  - Spatial Analysis
-  - Econometrics
+  - spatial analysis
+  - spatial econometrics
 company: 'UW'
 showInProjects: true
 ---

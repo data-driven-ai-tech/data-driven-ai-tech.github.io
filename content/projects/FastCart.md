@@ -6,6 +6,7 @@ rpubs: 'https://rpubs.com/matbarPL/fast-cart'
 tech:
   - R
   - association rules
+  - unsupervised learning
 company: 'UW'
 showInProjects: true
 ---

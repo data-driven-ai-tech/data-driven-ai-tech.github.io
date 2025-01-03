@@ -139,18 +139,18 @@ const About = () => {
             </p>
             <p>
               We offer custom software solutions tailored to your specific data needs, data strategy
-              development, and data processing expertise.
+              development and data processing expertise.
             </p>
           </div>
           <ul className="skills-list">
             <li>
-              Custom software solutions for data analysis, visualization, and AI-powered tools.
+              Custom software solutions for data analysis, visualization and AI-powered tools.
             </li>
             <li>
-              Data strategy development, technology identification, and data workflow optimization.
+              Data strategy development, technology identification and data workflow optimization.
             </li>
             <li>
-              Data processing expertise including cleaning, organizing, and extracting insights.
+              Data processing expertise including cleaning, organizing and extracting insights.
             </li>
             <li>
               Machine learning API integration for web portals to enhance user experiences and
