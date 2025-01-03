@@ -10,6 +10,29 @@ module.exports = {
       name: 'Instagram',
       url: 'https://www.instagram.com/datadriven.ai/',
     },
+    {
+      name: 'YouTube',
+      url: 'https://www.youtube.com/@data-driven-ai-channel',
+    },
+  ],
+
+  StorySocialMedia: [
+    {
+      name: 'GitHub',
+      url: 'https://github.com/matbarPL',
+    },
+    {
+      name: 'Twitter',
+      url: 'https://x.com/matbarPL',
+    },
+    {
+      name: 'RPubs',
+      url: 'https://rpubs.com/matbarPL',
+    },
+    {
+      name: 'Linkedin',
+      url: 'https://www.linkedin.com/in/mateusz-baryla/',
+    },
   ],
 
   navLinks: [
@@ -20,6 +43,18 @@ module.exports = {
     {
       name: 'Tech stack',
       url: '/#tech-stack',
+    },
+    {
+      name: 'Story',
+      url: '/#story',
+    },
+    {
+      name: 'Projects',
+      url: '/#projects',
+    },
+    {
+      name: 'Blog',
+      url: '/blog',
     },
     {
       name: 'Contact',

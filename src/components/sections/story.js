@@ -4,8 +4,9 @@ import styled from 'styled-components';
 import { srConfig } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
+import { StoryFooter } from '../index';
 
-const StyledAboutSection = styled.section`
+const StyledStorySection = styled.section`
   max-width: 900px;
 
   .inner {
@@ -113,7 +114,7 @@ const StyledPic = styled.div`
   }
 `;
 
-const About = () => {
+const Story = () => {
   const revealContainer = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
 
@@ -126,35 +127,43 @@ const About = () => {
   }, []);
 
   return (
-    <StyledAboutSection id="about" ref={revealContainer}>
-      <h2 className="numbered-heading">About datadriven.ai</h2>
+    <StyledStorySection id="story" ref={revealContainer}>
+      <h2 className="numbered-heading">Story</h2>
       <div className="inner">
         <StyledText>
           <div>
             <p>
-              datadriven.ai is your partner in harnessing the power of data. We believe that data is
-              more than just numbers; it's a valuable resource that can drive meaningful impact. We
-              are dedicated to helping you uncover hidden insights from your data and translate them
-              into actionable strategies.
-            </p>
-            <p>
-              We offer custom software solutions tailored to your specific data needs, data strategy
-              development and data processing expertise.
+              Mateusz is a professional with experience in management consulting, startups, and a
+              Fortune 500 company. He excels at analyzing complex data, translating technical
+              findings into actionable insights and presenting results effectively. Passionate about
+              data science and machine learning, Mateusz is particularly interested in the
+              intersection of business and technology. In his free time, he enjoys sports, cooking,
+              and reading.
             </p>
           </div>
-          <ul className="skills-list">
+          <hr />
+          <h3>Education</h3>
+          <ul className="education-list">
             <li>
-              Custom software solutions for data analysis, visualization and AI-powered tools.
+              <strong style={{ color: '#FFFFFF', fontWeight: 'bold' }}>University of Warsaw</strong>
+              <br />
+              MA, Data Science and Business Analytics
             </li>
+            <br />
             <li>
-              Data strategy development, technology identification and data workflow optimization.
+              <strong style={{ color: '#FFFFFF', fontWeight: 'bold' }}>
+                Wroclaw University of Science and Technology
+              </strong>
+              <br />
+              BSc, Computer Science
             </li>
+            <br />
             <li>
-              Data processing expertise including cleaning, organizing and extracting insights.
-            </li>
-            <li>
-              Machine learning API integration for web portals to enhance user experiences and
-              extract valuable data.
+              <strong style={{ color: '#FFFFFF', fontWeight: 'bold' }}>
+                Wroclaw University of Science and Technology
+              </strong>
+              <br />
+              BSc, Applied Mathematics
             </li>
           </ul>
         </StyledText>
@@ -162,17 +171,18 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/logo.png"
+              src="../../images/me.jpg"
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
-              alt="datadriven.ai"
+              alt="me"
             />
           </div>
+          <StoryFooter />
         </StyledPic>
       </div>
-    </StyledAboutSection>
+    </StyledStorySection>
   );
 };
 
-export default About;
+export default Story;

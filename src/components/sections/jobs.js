@@ -241,7 +241,7 @@ const Jobs = () => {
   };
 
   return (
-    <StyledJobsSection id="jobs" ref={revealContainer}>
+    <StyledJobsSection id="tech-stack" ref={revealContainer}>
       <h2 className="numbered-heading">Our tech-stack </h2>
 
       <div className="inner">

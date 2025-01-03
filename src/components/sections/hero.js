@@ -59,9 +59,11 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  const three_part_1 = <h3 className="big-heading">Dive into the data.</h3>;
-  const three_part_2 = <h3 className="big-heading">Drive impact.</h3>;
-  const four = (
+  const one = <h1>This is </h1>;
+  const two = <h2 className="big-heading">datadriven.ai</h2>;
+  const three = <h3 className="big-heading">Dive into the data.</h3>;
+  const four = <h3 className="big-heading">Drive impact.</h3>;
+  const five = (
     <>
       <p>
         datadriven.ai empowers businesses to unlock the full potential of their data. We go beyond
@@ -70,7 +72,7 @@ const Hero = () => {
       </p>
     </>
   );
-  const five = (
+  const six = (
     <a
       className="email-link"
       href="https://www.youtube.com/@data-driven-ai-channel"
@@ -80,7 +82,7 @@ const Hero = () => {
     </a>
   );
 
-  const items = [three_part_1, three_part_2, four, five];
+  const items = [one, two, three, four, five, six];
 
   return (
     <StyledHeroSection>

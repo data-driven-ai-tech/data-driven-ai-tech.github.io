@@ -43,7 +43,7 @@ const StyledProjectsSection = styled.section`
   }
 `;
 
-const StyledProject = styled.li`
+const StyledBlog = styled.li`
   position: relative;
   cursor: default;
   transition: var(--transition);
@@ -165,12 +165,12 @@ const StyledProject = styled.li`
   }
 `;
 
-const Projects = () => {
+const Blog = () => {
   const data = useStaticQuery(graphql`
     query {
       projects: allMarkdownRemark(
         filter: {
-          fileAbsolutePath: { regex: "/content/projects/" }
+          fileAbsolutePath: { regex: "/content/blog/" }
           frontmatter: { showInProjects: { ne: false } }
         }
         sort: { fields: [frontmatter___date], order: DESC }
@@ -182,7 +182,6 @@ const Projects = () => {
               tech
               github
               external
-              rpubs
             }
             html
           }
@@ -214,7 +213,7 @@ const Projects = () => {
 
   const projectInner = node => {
     const { frontmatter, html } = node;
-    const { github, external, title, tech, rpubs } = frontmatter;
+    const { github, external, title, tech } = frontmatter;
 
     return (
       <div className="project-inner">
@@ -227,11 +226,6 @@ const Projects = () => {
               {github && (
                 <a href={github} aria-label="GitHub Link" target="_blank" rel="noreferrer">
                   <Icon name="GitHub" />
-                </a>
-              )}
-              {rpubs && (
-                <a href={rpubs} aria-label="RPubs Link" target="_blank" rel="noreferrer">
-                  <Icon name="RPubs" />
                 </a>
               )}
               {external && (
@@ -282,7 +276,7 @@ const Projects = () => {
           <>
             {projectsToShow &&
               projectsToShow.map(({ node }, i) => (
-                <StyledProject key={i}>{projectInner(node)}</StyledProject>
+                <StyledBlog key={i}>{projectInner(node)}</StyledBlog>
               ))}
           </>
         ) : (
@@ -294,14 +288,14 @@ const Projects = () => {
                   classNames="fadeup"
                   timeout={i >= GRID_LIMIT ? (i - GRID_LIMIT) * 300 : 300}
                   exit={false}>
-                  <StyledProject
+                  <StyledBlog
                     key={i}
                     ref={el => (revealProjects.current[i] = el)}
                     style={{
                       transitionDelay: `${i >= GRID_LIMIT ? (i - GRID_LIMIT) * 100 : 0}ms`,
                     }}>
                     {projectInner(node)}
-                  </StyledProject>
+                  </StyledBlog>
                 </CSSTransition>
               ))}
           </TransitionGroup>
@@ -315,4 +309,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Blog;
