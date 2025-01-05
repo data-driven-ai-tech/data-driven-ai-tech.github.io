@@ -86,7 +86,7 @@ const StyledTabButton = styled.button`
   }
   @media (max-width: 600px) {
     ${({ theme }) => theme.mixins.flexCenter};
-    min-width: 120px;
+    min-width: 240px;
     padding: 0 15px;
     border-left: 0;
     border-bottom: 2px solid var(--lightest-navy);
@@ -174,9 +174,9 @@ const Jobs = () => {
         edges {
           node {
             frontmatter {
-              tools
               title
               range
+              expertise
             }
             html
           }
@@ -242,7 +242,7 @@ const Jobs = () => {
 
   return (
     <StyledJobsSection id="tech-stack" ref={revealContainer}>
-      <h2 className="numbered-heading">Our tech-stack </h2>
+      <h2 className="numbered-heading">My tech-stack </h2>
 
       <div className="inner">
         <StyledTabList role="tablist" aria-label="Tech stack" onKeyDown={e => onKeyDown(e)}>
@@ -271,7 +271,7 @@ const Jobs = () => {
           {jobsData &&
             jobsData.map(({ node }, i) => {
               const { frontmatter, html } = node;
-              const { title, range } = frontmatter;
+              const { title, range, expertise } = frontmatter;
 
               return (
                 <CSSTransition key={i} in={activeTabId === i} timeout={250} classNames="fade">
@@ -286,7 +286,9 @@ const Jobs = () => {
                       <span>{title}</span>
                     </h3>
 
-                    <p className="range">{range}</p>
+                    <p className="range">
+                      since: {range} <span className="range"> | expertise: {expertise}</span>
+                    </p>
 
                     <div dangerouslySetInnerHTML={{ __html: html }} />
                   </StyledTabPanel>

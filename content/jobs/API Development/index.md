@@ -1,9 +1,11 @@
 ---
-range: '2020-present'
-title: 'API Development'
+range: '2020'
+title: 'API development'
 expertise: Intermediate
-tools: FastAPI, Flask
 ---
 
 - Experience in building and deploying APIs for data-driven applications.
-- Familiar with frameworks like FastAPI and Flask.
+- Capable of integrating machine learning models into APIs to serve predictions and insights in real-time.
+- Can design full-stack ML applications that enable clients to access advanced analytics and insights via user-friendly interfaces.
+
+- **Python**: `fastapi`, `flask`

@@ -1,9 +1,13 @@
 ---
-range: '2016-present'
+range: '2017'
 title: 'Exploratory Data Analysis'
 expertise: Advanced # Adjust based on your skill level
-tools: seaborn, matplotlib, ggplot, ydata-profiling, Sweetviz
 ---
 
-- Skilled in using various visualization techniques to uncover patterns, trends, and insights within data.
-- Proficient in using libraries like seaborn, matplotlib, and ggplot for creating informative visualizations.
+- Skilled in using various visualization techniques to uncover patterns, trends and insights within data.
+- Conduct hypothesis testing and statistical analysis to validate observations and insights.
+- Proficient in identifying trends, patterns, and anomalies in datasets through visual and statistical techniques.
+
+- **Python**: `matplotlib`, `seaborn`, `ydata-profiling`, `sweetviz`
+- **R**: `tidyverse`, `shiny`
+- **Tools**: `Power BI`, `Tableau`
